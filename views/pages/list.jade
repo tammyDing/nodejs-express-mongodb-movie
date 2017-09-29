@@ -1,0 +1,30 @@
+extends ../include/layout
+
+block content
+  .container
+    .row
+      table.table.table-hover.table-bordered
+        thead
+          tr
+            th 动漫名称
+            th 作者
+            th 集数
+            th 评分
+            th 国家/地区
+            //- th 录入时间
+            th 查看
+            th 更新
+            th 删除
+        tbody
+          each movie in movies
+            tr(class="item-id-#{movie._id}")
+              td #{movie.title}
+              td #{movie.author}
+              td #{movie.total}
+              td #{movie.score}
+              td #{movie.country}
+              //- td #{moment(movie.meta.createdAt).format('YYYY-MM-DD')}
+              td: a(target="_blank", href="../movie/#{movie._id}") 查看
+              td: a(target="_blank", href="../admin/update/#{movie._id}") 修改
+              td: a.a-danger.del(href="javascript:;", data-id="#{movie._id}") 删除
+  script(type="text/javascript", src="/js/delete.js")

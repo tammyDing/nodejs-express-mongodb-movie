@@ -1,0 +1,42 @@
+extends ../include/layout
+
+block content
+  .container
+    .row
+      form.form-horizontal(method="post", action="/admin/movie/new")
+        input(type="hidden", name="movie[_id]", value="#{movie._id}")
+        .form-group
+          label.col-md-3.control-label(for="inputTitle") 动漫名称
+          .col-md-9
+            input#inputTitle.form-control(type="text", name="movie[title]", value="#{movie.title}")
+        .form-group
+          label.col-md-3.control-label(for="inputAuthor") 作者
+          .col-md-9
+            input#inputAuthor.form-control(type="text", name="movie[author]", value="#{movie.author}")
+        .form-group
+          label.col-md-3.control-label(for="inputTotal") 集数
+          .col-md-9
+            input#inputTotal.form-control(type="text", name="movie[total]", value="#{movie.total}")
+        .form-group
+          label.col-md-3.control-label(for="inputScore") 评分
+          .col-md-9
+            input#inputScore.form-control(type="text", name="movie[score]", value="#{movie.score}")
+        .form-group
+          label.col-md-3.control-label(for="inputCountry") 国家/地区
+          .col-md-9
+            input#inputCountry.form-control(type="text", name="movie[country]", value="#{movie.country}")
+        .form-group
+          label.col-md-3.control-label(for="inputPoster") 海报地址
+          .col-md-9
+            input#inputPoster.form-control(type="text", name="movie[poster]", value="#{movie.poster}")
+        .form-group
+          label.col-md-3.control-label(for="inputImgsrc") 缩略图
+          .col-md-9
+            input#inputImgsrc.form-control(type="text", name="movie[imgsrc]", value="#{movie.imgsrc}")
+        .form-group
+          label.col-md-3.control-label(for="inputSummary") 简介
+          .col-md-9
+            input#inputSummary.form-control(type="text", name="movie[summary]", value="#{movie.summary}")
+        .form-group
+          .col-md-offset-3.col-md-4
+            button.btn.btn-primary(type="submit") 提交

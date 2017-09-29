@@ -1,0 +1,44 @@
+body {
+  padding: 10px 50px;
+  font: 14px "Microsoft Yahie", "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.page-content{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.page-li{
+  margin: 10px;
+  flex: 0 0 200px;
+}
+
+.page-li h3{
+  line-height: 24px;
+  height: 24px;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: inherit;
+}
+
+.page-img{
+  height: 280px !important;
+}
+
+.page-header{
+  margin: 0 0 25px 0;
+  padding-bottom: 15px;
+}
+
+.a-danger{
+  color: #d9534f;
+}
+.a-danger:hover{
+  color: #f97975
+}

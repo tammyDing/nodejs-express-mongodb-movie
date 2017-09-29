@@ -1,0 +1,22 @@
+extends ../include/layout
+
+block content
+  .container
+    .row
+      .col-md-12
+        img(src="#{movie.poster}" alt="#{movie.title}")
+    .row
+      .col-md-12
+        dl.dl-horizontal
+          dt 动漫名称
+          dd= movie.title
+          dt 作者
+          dd= movie.author
+          dt 集数
+          dd= movie.total
+          dt 评分
+          dd= movie.score
+          dt 国家/地区
+          dd= movie.country
+          dt 简介
+          dd= movie.summary
