@@ -1,6 +1,6 @@
 ## Node+express+mongoose构建应用
 
-# npm install express jade moment mongoose bluebird
+### npm install express jade moment mongoose bluebird
 ```bash
 express
 
@@ -11,7 +11,7 @@ cnpm install bower
 bower install bootstrap
 ```
   
-# MongoDB
+### MongoDB
 ```bash
 cmd -> D:\MongoDB\bin -> mongod --dbpath D:\MongoDB\data  //连接服务
 
@@ -24,12 +24,12 @@ db.movies.find({}) //查找数据
 db.movies.remove({}) //清空数据
 ```
 
-# Mongoose
+### Mongoose
 ```bash
 mongoose.connect('mongodb://localhost/nodejs_6_movie')
 ```
 
-# Git
+### Git
 ```bash
 * 第一步：建立git仓库 -> git init
 
@@ -49,7 +49,7 @@ mongoose.connect('mongodb://localhost/nodejs_6_movie')
 
 ```
 
-# Git 提交
+### Git 提交
 ```bash
 
 * git status
@@ -66,7 +66,7 @@ mongoose.connect('mongodb://localhost/nodejs_6_movie')
 
 ```
 
-# Git
+### Git
 ```bash
 * username/password
 
